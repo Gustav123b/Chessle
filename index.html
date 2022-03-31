@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Chessle</h1>
+    </header>
+    <div class="game-area">
+        <div class="game-info">
+            <div>
+                <h2>Unplaced pieces:</h2>
+                <div class="unplaced-pieces-container"></div>
+                <div class="btn-container">
+                    <div class="btn btn-confirm" onclick="confirmBtn()">Confirm</div>
+                </div>
+            </div>
+            <div class="result-container">
+                <h2>Result: <span id="result"></span></h2>
+            </div>
+            <div class="attempts-container">
+                <h2>Attempt: <span id="attempt"></span></h2>
+            </div>
+        </div>
+        <div class="boards-container">
+
+        </div>
+    </div>
+
+    <script src="./pieces/movement/movement.js"></script>
+    <script src="./pieces/movement/diagonal.js"></script>
+    <script src="./pieces/movement/vertical.js"></script>
+    <script src="./pieces/movement/horizontal.js"></script>
+    <script src="./pieces/movement/knightMovement.js"></script>
+    <script src="./pieces/movement/kingMovement.js"></script>
+
+    <script src="./pieces/piece.js"></script>
+    <script src="./pieces/bishop.js"></script>
+    <script src="./pieces/rook.js"></script>
+    <script src="./pieces/knight.js"></script>
+    <script src="./pieces/king.js"></script>
+    <script src="./pieces/queen.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
